@@ -9,8 +9,30 @@
         
         First Name: <input type="text" name="fName"/><br>
         Last Name:  <input type="text" name="lName"/><br>
-        Gender:     
+        Gender:     <input type="radio" name="gender" value="m"> Male<br>
+                    <input type="radio" name="gender" value="f"> Female<br>
 
+        Zip Code:   <input type="text" name="zip" name="zip"><br>
+        City:       <span id="city"></span><br>
+        Latitude:   <br>
+        Longitude:  <br><br>
+        
+        State:
+        <select id="state" name="state">
+            <option> Select One </option>
+            <option value="ca"> California </option>
+            <option value="ny"> New York </option>
+            <option value="tx"> Texas </option>
+        </select><br>
+        
+        Select a County:  <select id="county"></select><br>
+        
+        Desired Username:  <input type="text" id="username" name="username"><br>
+
+        Password:        <input type="password" id="password" name="password"><br/>
+        Password Again:  <input type="password" id="passwordAgain">
+        
+        <input type="submit" value="Sign Up!">
 
         <!-- opening footer -->   
         <footer class="bg-dark">
