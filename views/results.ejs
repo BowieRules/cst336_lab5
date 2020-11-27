@@ -8,7 +8,15 @@
   <input type="text" placeholder="Type keyword" name="keyword" />
   <br><br>
   <button>Search</button>  
-</form>      
+</form>    
+<hr>
+
+<% imageUrlArray.forEach(function(imageUrl, i){ %>
+<%- (i%3 == 0)?'<br>':'' %>
+  <img src='<%= imageUrl %>' width='200' height='200' />
+  <img class="favoriteIcon" src='img/favorite.png' width='20'>
+<% }); %>
+
 <%- include('partials/footer.ejs') %>
   </body>
   </html>
